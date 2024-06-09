@@ -1,0 +1,141 @@
+
+/* Estilos generales */
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    gap: 50px;
+}
+
+header {
+    width: 250px;
+    background: whitesmoke;
+    padding: 20px;
+}
+
+/* Contenedor del logo y el nombre */
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 30px;
+}
+
+nav ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+nav ul ul {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul ul li {
+    border: none;
+}
+
+nav ul ul a {
+    background: #f9f9f9;
+}
+
+main {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 100px;
+}
+
+
+
+
+.container-top {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #dee2e6;
+    margin-right: 50px;
+}
+
+.horizontal-menu {
+    background-color: grey;
+}
+
+.horizontal-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal-menu li {
+    margin: 0;
+}
+
+.horizontal-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.horizontal-menu a:hover {
+    background-color: #495057;
+}
+
+.container-bottom {
+    background-color: #ffffff;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.messages {
+    margin-top: 20px;
+}
+
+.message-section {
+    margin-bottom: 20px;
+}
+
+.message-section h3 {
+    margin-bottom: 10px;
+}
+
+.message-section p {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+}

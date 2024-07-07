@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:white;/*color del cuerpo de la página*/
+}
+
+/* Estilos para el contenedor superior */
+.top-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.image-left img {
+    max-width: 100px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.separator {
+    width: 1px;
+    height: 100px;
+    background-color: #ddd;
+    margin: 0 20px;
+}
+
+.content-right {
+    flex-grow: 1;
+}
+
+/* Estilos para el contenedor inferior */
+.bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content-left {
+    flex-grow: 1;
+    text-align: center;
+   
+}
+
+.image-right img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Estilos para el título de ayuda */
+.help-title {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.help-title h2 {
+    margin: 0;
+}
+
+/* Estilos para las tarjetas */
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px 40px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.contenedorTexto {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 10vh; 
+    border: 100px;
+    color: black;
+    text-align: center;
+}
+
+.input {
+    position: relative;
+    margin-left: 300px; /* Espacio entre el input y el botón */
+}
+
+.input input {
+    width: 300px; /* Ancho del input */
+    height: 100px; /* Altura del input */
+}
+
+.input label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 18px;
+    pointer-events: none;
+    transition: .3s;
+    width: auto;
+    height: auto;
+    margin-left: 5px;
+}
+
+.input input:focus~label {
+    top: 0;
+    transform: translate(-50%, -100%);
+}
+
+.botoncito {
+    margin-left: 300px; /* Espacio entre el input y el botón */
+    margin-top: 8px;
+    height: 34px;  /* Altura del botón */
+    
+}
+
+.botoncito button {
+    background-color: blue; 
+    padding: 15px 25px;
+    margin: 10px;
+    font-size: 16px;
+    border: 2px solid orange;
+    color: black;
+    cursor: pointer;
+    background: linear-gradient(to right, transparent 50%, orange 40%);
+    background-size: 200%;
+    background-position: right;
+    transition: background-position 0.5s;
+    box-shadow: 0 0 10px;
+    font-weight: 600;
+}
+
+.botoncito button:hover {
+    background-position: left;
+    color: black;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margin por defecto */
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+.link:after {
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: orangered;
+    position: absolute;
+    bottom: -4px; /* Ajuste para que la línea quede justo debajo del texto */
+    left: 0;
+    transition: width 0.5s;
+}
+
+.link:hover:after {
+    width: 100%;
+}
+
+.card{
+    width: 370px;/* Damos altura y anchura en el contenedor*/
+    height: 420px;
+    border-radius: 8px; /*  damos borde a las cartas*/
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;/*centramos */
+    transition: all 0.25s;
+}
+
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 13px 16px rgba(0, 0, 0, 0.2);
+    background-image:linear-gradient(to top right ,blue,purple,red);/*efecto degradado*/
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    
+}
+
+
+.responsive{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twilio</title>
+    <link rel="stylesheet" href="estilos.css" >
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<header>
+
+    <!-- Contenedor superior -->
+    <div class="top-container">
+        <div class="image-left">
+            <img src="imagenes/PROGRACADEMY.jpg" alt="Left Image">
+        </div>
+            <ul>
+                <li class="link"> <a href="hh">Inicio</a> </li>
+                <li class="link"><a href="huu"> Quienes somos </a></li>
+                <li ><a href="jj">Contáctanos</a></li>
+            </ul>
+        
+    </div>
+</header>
+
+    <!-- Contenedor inferior -->
+    <div class="bottom-container">
+        <div class="content-left">
+            <h1> ¿Necesitas ayuda?</h1>
+           <p> Escribenos y nos pondremos en contacto contigo</p>
+           <!--Contenedor de la parte del mensaje enviar-->
+
+           <div class="contenedorTexto">
+
+            <form action="mensajesrecibidos.php" method="post">
+            <div class="input">
+                <input type="text" name="mensaje" required>
+                <label>Escribe tu mensaje aquí</label>
+            </div>
+            
+
+         <!--boton de la pagina-->   
+
+            <div class="botoncito">
+                <button type="submit" class="bnt" id="viewAlerta">Enviar mensaje</button>
+            </div>
+
+
+
+
+        </form>
+        </div>
+
+        </div>
+
+        
+        <div class="image-right">
+            <img src="imagenes/pensamiento.JPG" alt="Right Image">
+        </div>
+    </div>
+
+    <!-- Título de el contenedor de las cartas-->
+    <div class="help-title">
+        <h2>No dudes en preguntar estaremos para ayudarte </h2>
+    </div>
+
+    <!-- Tarjetas -->
+    <div class="cards-container">
+        <div class="card">
+            <div class="contenedorImagen">
+                <img src="imagenes/Logo_Progracademy.png" alt="Imagen 1" class="responsive">
+            </div>
+            <br>
+            <br>
+            <p> ¿Tienes dudas sobre el curso ?</p>
+        </div>
+       
+        <div class="card">
+            <div class="contenedorImagen">
+                <img src="imagenes/Asesoría.JPG" alt="Imagen 2" class="responsive">
+            </div>
+            <br>
+            <br>
+            <br>
+            <p>¿Necesitas asesoría en ciertos temas ?</p>
+        </div>
+
+        <div class="card">
+            <div class="contenedorImagen">
+                <img src="imagenes/costos.JPG" alt="Imagen 3" class="responsive">
+            </div>
+            <p>¿Quieres saber costos del programa?</p>
+        </div>
+    </div>
+</body>
+</html>

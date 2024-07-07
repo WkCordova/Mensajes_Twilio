@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.carrousel{
+    width: 100%;
+}
+
+.contenedorCarrousel{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background-color: #3F888F;
+}
+
+#itemCarrousel-2{
+    background-color: rgb(92, 164, 179);
+}
+
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: black;
+}
+
+
+  .btn {
+    padding: 30px 30px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  p{
+    text-align: center;
+  }
+  .ayuda{
+    position: absolute;
+            top: 50%;
+            right: 450px; /* Distancia desde el borde derecho */
+            transform: translateY(-50%);
+}
+
+
+.itemCarrouselTarjeta{
+    position: absolute;
+            top: 50%;
+            left: 200px; /* Distancia desde el borde derecho */
+            transform: translateY(-50%);
+}
+
+.contenedorTexto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; 
+    border: 100px;
+    color: black;
+    
+}
+
+.input {
+    position: relative;
+    margin-right: 10px; /* Espacio entre el input y el botón */
+}
+
+.input input {
+    width: 300px; /* Ancho del input */
+    height: 100px; /* Altura del input */
+   
+}
+
+.input label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 18px;
+    pointer-events: none;
+    transition: .3s;
+    width: auto;
+    height: auto;
+
+}
+
+.input input:focus~label {
+    top: 0;
+    transform: translate(-50%, -100%);
+}
+
+.botoncito {
+    margin-left: 100px; /* Espacio entre el input y el botón */
+}
+
+.botoncito button {
+    height: 34px; /* Altura del botón */
+    background-color: rgb(155, 155, 221);
+}

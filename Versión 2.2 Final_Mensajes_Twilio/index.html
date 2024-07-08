@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Twilio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="carrousel">
+        <div class="contenedorCarrousel">
+            
+            <div class="itemCarrousel" id="itemCarrousel-1">
+                
+                <div class="itemCarrouselTarjeta">
+                    
+                    <img src="imagenes/Logo_Progracademy.png" width="450px" height="400" > 
+                    <h1 class="ayuda">Necesitas Soporte Técnico </h1>
+               
+                </div>
+
+                    
+
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-2">
+                <div class="itemCarrouselTarjeta">
+                    <img src="imagenes/PROGRACADEMY.jpg" width="900px" height="350" >
+                </div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    
+                </div>
+            </div>
+           
+        </div>
+        <div class="conteCarrouselController">
+            <a href="#itemCarrousel-1">•</a>
+            <a href="#itemCarrousel-2">•</a>
+         
+        </div>
+          
+    </div>
+
+    <div class="contenedorTexto">
+
+        <form action="twilioInicio.php" method="post">
+        <div class="input">
+            <input type="text" name="mensaje" required>
+            <label>Escribe tu mensaje aquí</label>
+        </div>
+        
+        <div class="botoncito">
+            <button type="submit" class="bnt" >Enviar mensaje</button>
+        </div>
+    </form>
+    </div>
+
+
+</body>
+</html>
